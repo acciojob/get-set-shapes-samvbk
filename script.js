@@ -8,23 +8,23 @@ class Rectangle {
 		this.height = height;
 	}
 	get width{
-		return(width);
+		return(this.width);
 	}
 	get height{
-		return(height);
+		return(this.height);
 	}
 
-	getArea(width,height){
+	getArea(this.width,this.height){
 		return(this.width*this.height);
 	}
 }
 
 class Square extends Rectangle {
 	constructor(side){
-		// super(side,side);
+		super(side,side);
 		this.side = side;
 	}
-	getPerimeter(side){
+	getPerimeter(this.side){
 		return(4*this.side);
 	}
 }
