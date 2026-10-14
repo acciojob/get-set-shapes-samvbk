@@ -7,18 +7,25 @@ class Rectangle {
 		this.width = width;
 		this.height = height;
 	}
+	get width{
+		return(width);
+	}
+	get height{
+		return(height);
+	}
+
 	getArea(width,height){
-		return(width*height);
+		return(this.width*this.height);
 	}
 }
 
 class Square extends Rectangle {
-	constructor(width,height,side){
-		super(width,height);
+	constructor(side){
+		// super(side,side);
 		this.side = side;
 	}
 	getPerimeter(side){
-		return(4*side);
+		return(4*this.side);
 	}
 }
 
